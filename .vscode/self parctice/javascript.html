@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = 10;
+        var b = 10;
+        var c=(a+b);
+        document.write(c,"<br>");
+        document.write("The sum=",(a+b),"<br>");
+        var i=1;
+        for(i=1;i<=10;i++)
+        {
+            document.write(i,"<br>");
+        }
+        var j=1;
+        while(j!=10)
+        {
+            document.write(j,"<br>");
+            j++;
+        }
+
+        // we can input from users
+        var d=parseInt(prompt("Enter the value"));
+        document.write("the value of d is=",d,"<br>");
+        fact=1;
+        var k=1;
+        for(k=1;k<=d;k++)
+        {
+            fact=fact*k;
+            document.write(k,"*")
+        }
+        document.write("\b","=",fact);
+    
+       
+    </script>
+    
+</body>
+</html>

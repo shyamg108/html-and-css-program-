@@ -1,0 +1,150 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="layout-float.css">
+</head>
+<style>
+    * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.circular_border{
+    border-radius: 4px;
+}
+
+.active{
+    background-color: rgb(22, 168, 22)!important;
+}
+
+.main_container {
+  width: 100%;
+  /* background-color: red; */
+  height: 900px;
+  padding: 20px;
+}
+
+.header {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  padding-top: 35px;
+
+}
+.main_content {
+  width: 100%;
+  height: 350px;
+  /* border: 3px solid red; */
+  overflow: auto;
+}
+
+.left_content {
+  width: 25%;
+  /* height: 700px; */
+  float: left;
+}
+
+.left_content .list{
+    width: 100%;
+
+}
+
+.left_content .list .list_item{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(201, 197, 197);
+    margin-bottom: 10px;
+    padding-left: 2px;
+    padding-top: 5px;
+}
+
+span{
+    margin-right: 50px;
+    text-decoration:underline;
+}
+.middle_content p, .right_content p{
+    line-height: 23px;
+}
+
+
+
+.middle_content {
+  width: 50%;
+  /* height: 700px; */
+  /* background-color: rgb(6, 143, 97); */
+  float: left;
+  padding: 20px;
+}
+
+h2{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.right_content {
+  width: 25%;
+  /* height: 700px; */
+  background-color: aqua;
+  float: left;
+  padding-left: 10px;
+  height: 100%;
+}
+
+.footer{
+    clear: both;
+    border: 1px solid gray;
+    background-color: rgb(201, 197, 197);
+    padding: 15px;
+    margin-top: 20px;
+    text-align-last: center;
+}
+</style>
+
+<body>
+    <div class="main_container">
+        <div class="header active circular_border">
+            <h1>Welcome to My Homepage</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="main_content">
+            <div class="left_content">
+                <div class="list">
+                    <div class="list_item circular_border active">Styleshet1</div>
+                    <div class="list_item circular_border">Styleshet2</div>
+                    <div class="list_item circular_border">Styleshet3</div>
+                    <div class="list_item circular_border">Styleshet4</div>
+                    <div class="list_item circular_border">Styleshet5</div>
+                </div>
+            </div>
+            <div class="middle_content">
+                <h2>Same page different stylesheets</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto iste rerum odio, sit hic, itaque
+                    maxime molestiae neque mollitia alias ab cumque eum veritatis quod harum consectetur ducimus fuga?
+                    Iure inventore mollitia, veritatis hic voluptas quod sit tempora autem perferendis alias ea,
+                    voluptatem, minus excepturi maxime qui fugiat eveniet accusantium ab? Assumenda impedit, officia est
+                    eum odio illum! Error, libero!</p>
+                <span>Stylesheet1</span><span>Stylesheet2</span><span>Stylesheet3</span><span>Stylesheet4</span>
+                <h2>No Styles</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, nemo assumenda autem est repudiandae
+                    vero quibusdam corporis qui culpa excepturi?</p>
+                <span>Stylesheet-1</span>
+            </div>
+            <div class="right_content circular_border">
+                <h2>Side-bar</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptates aperiam odit
+                    obcaecati nobis sint ducimus magni error culpa. Nemo?</p>
+            </div>
+        </div>
+        <div class="footer circular_border">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas doloremque sint, reprehenderit
+                cupiditate temporibus sit vel, cumque perferendis quod praesentium officiis ratione laborum inventore
+                nisi magni soluta, quasi ipsam! Commodi vero alias molestias, ut aperiam tempore dolorem nisi minima
+                fuga eveniet porro iste. Minus, eius fuga. Soluta, porro quod! Velit perferendis unde iure doloribus
+                architecto fugit saepe numquam amet similique recusandae. Possimus cum.</p>
+        </div>
+    </div>
+</body>
+
+</html>

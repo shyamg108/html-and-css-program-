@@ -1,0 +1,29 @@
+<html>
+<head><title>Customer Information</title></head>
+<body>
+<table>
+<form method="POST" action="">
+<label> Customer Information: </label> <input type=text name="name" size="15"><br><br>
+<label> Customer ID: </label> <input type=number name="cid"><br><br>
+<label> Customer Name: </label> <input type=text name="cname"><br><br>
+<label> EmailID: </label> <input type=email name="Email"><br><br>
+<label> Contact Number: </label> <input type=text name="country code" value="+91" size="2" disabled/>
+<input type=number name="pnumber"><br><br>
+<input type=submit name="submit"><br><br>
+</form>
+<?php if(isset($_POST['submit']))
+{
+$cid = $_POST['cid'];
+$cname = $_POST['cname'];
+$email = $_POST['Email'];
+$Phone = $_POST['pnumber'];
+echo "customerID :"; echo $cid;
+echo " <br>";
+echo "Customer Name :"; echo $cname;
+echo "<br>";
+echo "Email ID :"; echo $email;
+echo "<br>"; echo "Phone :"; echo $Phone; echo "<br>";
+}
+?>
+</body>
+</html>

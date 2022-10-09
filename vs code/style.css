@@ -1,0 +1,52 @@
+.nav {
+    background-color: #f50b0b;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.nav ol li {
+    text-decoration: none;
+    text-decoration-style: none;
+    display: inline;
+}
+
+.nav ol li a {
+    text-decoration: none;
+    color: rgb(243, 243, 242);
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#h1 {
+    font-size: 50px;
+    font-family: cursive;
+    padding-left: 100px;
+}
+
+#h2 {
+    font-size: 30px;
+    font-family: cursive;
+    padding-left: 200px;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ff0f0f;
+    padding: 10px;
+}
+
+.abc {
+    display: flex;
+}
+
+.text {
+    border: 2px solid #eb0c0c;
+    margin-left: 10px;
+    margin-right: 50px;
+    font-size: 15px;
+}
+
+.text1 {
+    margin-left: 20px;
+}

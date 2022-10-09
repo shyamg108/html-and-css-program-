@@ -1,0 +1,29 @@
+<html>
+<head><title>Hello Data</title></head>
+<body>
+<?php
+$sname;
+$sroll;
+$conn=new mysqli('localhost','root','','mydb');//no password
+if($conn->connect_error)
+{
+echo "unable to connect";
+echo '</br>';
+}
+else{
+$query = mysqli_query($conn, "SELECT * FROM student");
+if(!$query){
+die(mysqli_error($conn));
+}
+if (mysqli_num_rows($query) > 0)
+{
+$rowdata = mysqli_fetch_assoc($query);
+$sroll= $rowdata["sroll"];
+$sname=$rowdata["sname"];
+}
+}
+?>
+<input type=text value="<?php echo @$sroll;?>">
+<input type=text value="<?php echo @$sname;?>">
+</body>
+</html>

@@ -1,0 +1,42 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    text-align: right;
+    background-color: brown;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+    
+}
+nav ul li{
+    display: inline-block;
+    margin-top: 40px;
+}
+a{
+    text-decoration: none;
+    color:black;
+    margin:20px
+}
+.container{
+    margin: 0px 50px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+a:hover{
+    background-color: green;
+    color:yellowgreen;
+    cursor:pointer;
+    border: 10px;
+}
+img{
+    height: 100px;
+    margin:0px 50px;
+    border-radius: 50%;
+}

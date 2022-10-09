@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- write a program to check armstrong number:- -->
+    <script>
+        var number=parseInt(prompt("Enter any number:-"));
+        var temp=number;
+        var count=0;
+        // var sum=0;
+        var sum1=0;
+        while(temp>0)
+        {
+           var remainder=temp%10;
+        //    sum+=remainder*remainder*remainder;
+           temp=parseInt(temp/10);
+           count++;
+        }
+        // sum=0;
+        temp=number;
+        // docum
+        while(temp>0)
+        {
+           var remainder=temp%10;
+           sum1+=Math.pow(remainder,count);
+           temp=parseInt(temp/10);
+        }
+        if(sum1==number)
+        {
+            document.write(number,"Is the armstrong number:-");
+        }
+        else
+        {
+            document.write(number,"Is the  not armstrong number:-");
+        }
+        document.write("how manu digit:-","<br>",count);
+    </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+}
+h1{
+    text-align: center;
+    padding-top: 10px;
+    
+}
+nav{
+    background-color: lime;
+    display: grid;
+    place-items: center;
+
+}
+nav ul  {
+    list-style-type: none;  
+}
+nav ul a{
+    display: inline-flex;
+    padding: 10px;
+    text-decoration: none;
+    color:black;
+    transition: 0.2s;
+    margin:0px 40px;
+    font-size:30px;
+}
+nav ul a:hover{
+    background-color:black;
+    color: white;
+
+}
+.items
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 20px 30px;
+    grid-column-gap:20px ;
+    grid-row-gap:20px;
+}
+.item{
+    height: auto;
+    width:auto;
+}
+.item img{
+    object-fit: cover;
+    cursor: pointer;
+    transition: 00.2s ease;
+}
+.item img:hover{
+    transform: scale(1.02);
+}
+.item h4{
+    text-align: center;
+    padding: 5px;
+    color:blue;
+}
+.item button{
+    padding:5px 10px;
+    border:none;
+    outline:none;
+    background-color: green;
+    cursor: pointer;
+    color:aliceblue;
+    border-radius: 4px;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    transition: 0.2s all;
+}
+.item button:hover{
+    transform: scale(1.08);
+}
+@media screen and (max-width:766px)
+{
+    .item{
+        grid-template-columns: repeat(2,1fr);
+        }
+}
+@media screen and (max-width:100px)
+{
+    .item{
+        grid-template-columns: repeat(1,1fr);
+        }
+}
+
+    
+
+    

@@ -1,0 +1,26 @@
+body{
+    margin:0%;
+    padding:0%;
+    background-image: url("N.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    list-style: none; 
+}
+header nav ul li{
+    margin: 0 30px;
+}
+.top header ul li
+{
+    background-color:black;
+    color:brown;
+    margin:30px 40px 30px 40px;
+    height: 30x;
+    width:100%;
+
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&display=swap" rel="stylesheet"> 
+    <title>Music store</title>
+</head>
+<body>
+    <style>
+        * {
+            font-family:Georgia, 'Times New Roman', Times, serif
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .bg-img {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: url('https://images.pexels.com/photos/2381596/pexels-photo-2381596.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+            background-size: cover;
+            background-blend-mode:color;
+            opacity: 0.5;
+        }
+        body {
+            position: relative;
+            height: 100vh;
+            background-color: black;
+        }
+        .wrap-body {
+            display: flex;
+            justify-content: center;
+        }
+        .wrapper {
+            position: relative;
+            width: 900px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .footer {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            height: 70px;
+            background: white;
+            display: flex;
+            justify-content: center;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .song {
+            display: flex;
+            color: white;
+            margin-top: 20px;
+        }
+        .description {
+            width: 200px;
+            padding: 10px;
+            background: #402C76;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            padding-bottom: 20px;
+        }
+        .description > a {
+            color: #ffffff80;
+            font-size: 15px;
+            font-style: italic;
+        }
+        .logo {
+            height: 200px;
+        }
+        .title-song {
+            font-size: 22px;
+        }
+        .name {
+            font-size: 20px;
+            color: rgb(235, 235, 235);
+        }
+        .price {
+            font-size: 25px;
+            color: #e9e9e9;
+        }
+
+
+    </style>
+    <div class="bg-img"></div>
+    <div class="wrap-body">
+        <div class="wrapper">
+            <div class="song">
+                <img src="https://i.pinimg.com/736x/55/a2/d8/55a2d83437446a42b1291c1eccac79cd.jpg" alt="" class="logo">
+                <div class="description">
+                    <div class="title-song">Bollywood</div>
+                    <div class="name">Tera yaar hu main</div>
+                    <div class="price">15 $</div>
+                    <a href="https://www.youtube.com/watch?v=EatzcaVJRMs">This song is from sonu ke titu ki sweety</a>
+                </div>
+            </div>
+            <div class="song">
+                <img src="https://a10.gaanacdn.com/images/albums/85/2035285/crop_480x480_2035285.jpg" alt="" class="logo">
+                <div class="description">
+                    <div class="title-song">Bhojpuri</div>
+                    <div class="name">Lolipop lagelu</div>
+                    <div class="price">125 $</div>
+                    <a href="https://www.youtube.com/watch?v=Gr8G_ldltDE">This is a famous song of Up and Bihar</a>
+                </div>
+            </div>
+            <div class="song">
+                <img src="https://djbaap.net/wp-content/media/covers/1946.jpg" alt="" class="logo">
+                <div class="description">
+                    <div class="title-song">Punjabi</div>
+                    <div class="name">Raatan Teriyan</div>
+                    <div class="price">25 $</div>
+                    <a href="https://www.youtube.com/watch?v=DGDk2y6QqaI">Lovely and romantic song</a>
+                </div>
+            </div>
+            <div class="song">
+                <img src="https://a10.gaanacdn.com/images/albums/48/2375348/crop_480x480_2375348.jpg" alt="" class="logo">
+                <div class="description">
+                    <div class="title-song">Haryanvi    </div>
+                    <div class="name">Ghunghat</div>
+                    <div class="price">45 $</div>
+                    <a href="https://www.youtube.com/watch?v=TNO6jY7ycFc">This is a popular song of Sapna chaudhary</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="wrapper">
+            <a href="https://gaana.com/">Shopping</a>
+            <a href="https://www.musicstores.in/">Store</a>
+            <a href="https://www.careersinmusic.com/">Career</a>
+            <a href="https://www.musicstores.in/contact-us">Contact</a>
+        </div>
+    </div>
+</body>
+</html>
